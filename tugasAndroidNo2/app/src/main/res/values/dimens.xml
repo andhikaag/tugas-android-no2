@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightRelative">840dp</dimen>
+    <dimen name="marginTopJenius">-40dp</dimen>
+    <dimen name="marginLeftJenius">55dp</dimen>
+    <dimen name="widthJenius">300dp</dimen>
+    <dimen name="heightJenius">200dp</dimen>
+    <dimen name="marginTopGambar">-60dp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="text2Size">20sp</dimen>
+    <dimen name="marginTopText2">5dp</dimen>
+    <dimen name="marginLeftTombol">145dp</dimen>
+    <dimen name="marginRightTombol">5dp</dimen>
+    <dimen name="marginTopTombol">80dp</dimen>
+    <dimen name="widthTombol">20dp</dimen>
+    <dimen name="HeightTombol">5dp</dimen>
+    <dimen name="widthButton">300dp</dimen>
+    <dimen name="heightButton">60dp</dimen>
+    <dimen name="marginLeftButton">55dp</dimen>
+    <dimen name="marginTopButton">50dp</dimen>
+    <dimen name="textSizeButton">20sp</dimen>
+    <dimen name="marginTopText3">15dp</dimen>
+    <dimen name="marginTopText4">20dp</dimen>
+</resources>

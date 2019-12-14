@@ -1,18 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:background="@color/colorPurple">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heightRelative">
+        <ImageView
+            android:id="@+id/logoJenius"
+            android:src="@drawable/jenius"
+            android:layout_width="@dimen/widthJenius"
+            android:layout_height="@dimen/heightJenius"
+            android:layout_marginLeft="@dimen/marginLeftJenius"
+            android:layout_marginTop="@dimen/marginTopJenius" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/gambarOrang"
+            android:src="@drawable/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoJenius"
+            android:layout_marginTop="@dimen/marginTopGambar" />
+
+        <TextView
+            android:id="@+id/text"
+            android:typeface="sans"
+            android:textSize="@dimen/textSize"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambarOrang"
+            android:text="@string/text1" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:typeface="normal"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text2Size"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/marginTopText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:text="@string/text2" />
+
+        <Button
+            android:id="@+id/button1"
+            android:background="@color/colorDark"
+            android:layout_marginLeft="@dimen/marginLeftTombol"
+            android:layout_marginRight="@dimen/marginRightTombol"
+            android:layout_marginTop="@dimen/marginTopTombol"
+            android:layout_width="@dimen/widthTombol"
+            android:layout_height="@dimen/HeightTombol"
+            android:layout_below="@+id/text2" />
+
+        <Button
+            android:id="@+id/button2"
+            android:background="@color/colorDark"
+            android:layout_marginRight="@dimen/marginRightTombol"
+            android:layout_marginTop="@dimen/marginTopTombol"
+            android:layout_width="@dimen/widthTombol"
+            android:layout_height="@dimen/HeightTombol"
+            android:layout_below="@+id/text2"
+            android:layout_toRightOf="@+id/button1"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:background="@color/colorDark"
+            android:layout_marginRight="@dimen/marginRightTombol"
+            android:layout_marginTop="@dimen/marginTopTombol"
+            android:layout_width="@dimen/widthTombol"
+            android:layout_height="@dimen/HeightTombol"
+            android:layout_below="@+id/text2"
+            android:layout_toRightOf="@+id/button2"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:background="@color/colorWhite"
+            android:layout_marginRight="@dimen/marginRightTombol"
+            android:layout_marginTop="@dimen/marginTopTombol"
+            android:layout_width="@dimen/widthTombol"
+            android:layout_height="@dimen/HeightTombol"
+            android:layout_below="@+id/text2"
+            android:layout_toRightOf="@+id/button3"/>
+
+        <Button
+            android:id="@+id/buttonBawah"
+            android:layout_below="@id/button1"
+            android:layout_width="@dimen/widthButton"
+            android:layout_height="@dimen/heightButton"
+            android:layout_marginLeft="@dimen/marginLeftButton"
+            android:layout_marginTop="@dimen/marginTopButton"
+            android:background="@drawable/bgtransparant"
+            android:text="@string/textButton"
+            android:textSize="@dimen/textSizeButton"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopText3"
+            android:layout_below="@+id/buttonBawah"
+            android:text="@string/text3"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textSizeButton"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopText4"
+            android:layout_below="@+id/text3"
+            android:text="@string/text4"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</ScrollView>
